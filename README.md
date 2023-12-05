@@ -53,18 +53,9 @@ def largest_prime(n):
         while not is_prime(cP) and n % cP != 0: cP += 1
     return m
 ```
-Sonucumuzuz.
+Sonucumuz.
 ```
-def largest_prime(n):
-    if is_prime(n): return n
-    m = 0
-    cP = 2
-    while n != 1:
-        while n % cP == 0: n //= cP
-        m = cP
-        cP += 1
-        while not is_prime(cP) and n % cP != 0: cP += 1
-    return m
+print(largest_prime(600851475143))
 ```
 
 ## Problem 4
